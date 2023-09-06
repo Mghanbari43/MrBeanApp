@@ -845,8 +845,8 @@ spatial.ASReml <-
     Datos <- as.data.frame(x$mf)
     xlab <- col
     ylab <- row
-    x.coord <- as.numeric(Datos[, col])
-    y.coord <- as.numeric(Datos[, row])
+    x.coord <- as.numeric(as.character(Datos[, col]))
+    y.coord <- as.numeric(as.character(Datos[, row]))
 
     trait <- response
     response <- Datos[, response]
